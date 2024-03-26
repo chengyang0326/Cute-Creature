@@ -68,53 +68,53 @@ public class EvolvableCuteCreature extends CuteCreature{
 		int damage;
 		int a = attackRating;
 		int d = c.defenseRating;
-		if(attuned.equals("light")&& c.getAttuned().equals("tech")){
+		if("light".equals(attuned)&& "tech".equals(c.getAttuned())){
 			damage = a-5*d;
 			if(damage<0){
 				damage = 0;
 			}
 
 		}
-		else if (attuned.equals("light")&& c.getAttuned().equals("dark")){
+		else if ("light".equals(attuned)&& "dark".equals(c.getAttuned())){
 			damage=5*a-d;
 			if(damage<0){
 				damage=10;
 			}
 		}
-		else if(attuned.equals("dark")&& c.getAttuned().equals("nature")){
+		else if("dark".equals(attuned)&& "nature".equals(c.getAttuned())){
 			damage = a-5*d;
 			if(damage<0){
 				damage = 0;
 			}
 
 		}
-		else if (attuned.equals("dark")&& c.getAttuned().equals("light")){
+		else if ("dark".equals(attuned)&& "light".equals(c.getAttuned())){
 			damage=5*a-d;
 			if(damage<0){
 				damage=10;
 			}
 		}
-		else  if(attuned.equals("nature")&& c.getAttuned().equals("dark")){
+		else  if("nature".equals(attuned)&& "dark".equals(c.getAttuned())){
 			damage = a-5*d;
 			if(damage<0){
 				damage = 0;
 			}
 
 		}
-		else if (attuned.equals("nature")&& c.getAttuned().equals("tech")){
+		else if ("nature".equals(attuned)&& "tech".equals(c.getAttuned())){
 			damage=5*a-d;
 			if(damage<0){
 				damage=10;
 			}
 		}
-		else if(attuned.equals("tech")&& c.getAttuned().equals("light")){
+		else if("tech".equals(attuned)&& "light".equals(c.getAttuned())){
 			damage = a-5*d;
 			if(damage<0){
 				damage = 0;
 			}
 
 		}
-		else if (attuned.equals("tech")&& c.getAttuned().equals("nature")){
+		else if ("tech".equals(attuned)&& "nature".equals(c.getAttuned())){
 			damage=5*a-d;
 			if(damage<0){
 				damage=10;
